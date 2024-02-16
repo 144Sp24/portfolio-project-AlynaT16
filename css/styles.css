@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, div, header, nav, main, footer{
+body, div, header, nav, main, footer, ul{
     margin: 0;
     padding: 0;
     border: 0;
@@ -22,37 +22,36 @@ div professional {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+
 /* Style rule for header */
 header {
-    width: 25%;
-    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #EEF0E5;
     text-align: center;
     color: #B6C4B6;
-    font-family: Verdana, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    padding-top: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
 }
 
 /* Style rule for navigation */
 nav {
-    width: 70%;
-    float: right;
-    margin: 5em 3em 0 0;
-    padding-bottom: 2em
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 nav li {
     display: inline-block;
-    font-size: 1em;
-    font-family: Verdana, Arial, sans-serif;
-    font-weight: bold;
+    font-size: 1.5em;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 nav li a {
@@ -63,9 +62,10 @@ nav li a {
     text-decoration: none;
 }
 
+
 /* Style rules for main content */
 main {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     clear: left;
     background-color: #EEF0E5;
@@ -76,7 +76,7 @@ main {
 
 /* Style rules for about content */
 #about {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     color: #304D30;
     text-decoration: none;
@@ -98,6 +98,7 @@ main {
     text-decoration: none;
 }
 
+
 /* Style rules for contact content */
 #contact {
     text-align: center;
@@ -112,17 +113,33 @@ main {
     border: 8px solid #000;
 }
 
+.tel-link {
+    background-color: #304D30;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tel-link a {
+    color: #B6C4B6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Style rules for footer content*/
 footer p {
     text-align: center;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #B6C4B6;
     padding: 0 1em;
 }
 
 footer p a {
     text-align: center;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #B6C4B6;
     text-decoration: none;
 }
