@@ -90,6 +90,16 @@ main {
     text-decoration: none;
 }
 
+#about ul {
+    text-align: left;
+    width: 30%;
+    margin: auto;
+}
+
+#about li{
+    margin-bottom: 10px;
+}
+
 #about h2 {
     text-align: center;
     color: #304D30;
@@ -97,6 +107,7 @@ main {
     font-size: 1em;
     text-decoration: none;
 }
+
 
 
 /* Style rules for contact content */
@@ -121,6 +132,7 @@ main {
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 8px;
 }
 
 .tel-link a {
@@ -142,4 +154,88 @@ footer p a {
     font-family: "Montserrat", sans-serif;
     color: #B6C4B6;
     text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+    
+    /* Tablet Viewport: Show tsb-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a{
+        padding: 0.5em;
+    }
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+        
+    nav li a {
+        padding: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+        
+        /* Desktop Viewport: Style rules for main content*/
+    #info ul {
+        margin-left: 5%;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: #ffff;
+    }
+
+    /* selected link */
+    a:active {
+        color: #B6C4B6;
+    }
+        
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    body {
+       background: linear-gradient(#f6eee4, #78593a); 
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    main {
+        background-color: #f6eee4;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: #ffff;
+    }
+
+    /* selected link */
+    a:active {
+        color: #B6C4B6;
+    }
 }
